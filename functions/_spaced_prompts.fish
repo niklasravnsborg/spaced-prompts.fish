@@ -6,11 +6,16 @@ function _spaced_prompts
 # save preexisting `fish_prompt` to new function
 functions -c fish_prompt _original_fish_prompt
 
-function fish_prompt
+function _insert_newline
+    set -l original_status \$status
     if test \$first_prompt != true
         echo
     end
+    return \$original_status
+end
 
+function fish_prompt
+    _insert_newline
     _original_fish_prompt
 end"
 end
