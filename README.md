@@ -6,7 +6,8 @@ Printing a new line before the prompt is a common practice to separate the promp
 
 - 📏 Add a new line before the prompt to separate it from the previous output
 - ✨ Doesn't add a new line when the prompt is the first line of the terminal
-- ⌨️ Handles behaviors like `clear` and `Ctrl + L` into account
+- ✅ Keeps the `$status` of the last command intact
+- ⌨️ Handles behaviors like `clear` and `Ctrl + L` correctly
 - 🚀 Works with [Starship](https://starship.rs/)
 
 ## Installation
